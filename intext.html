@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PC24 — professional logo, banner, poster, wedding album, sign board, LED board and business advertisement design.">
+  <meta name="theme-color" content="#090909">
+  <title>PC24 | Creative Design Studio</title>
+  <style>
+    :root{--bg:#090909;--panel:#141414;--gold:#e53935;--gold2:#ffffff;--text:#f7f4ed;--muted:#b8b3a7;--line:rgba(229,57,53,.28)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(9,9,9,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:900;letter-spacing:1.5px;color:#ffffff;font-size:18px}.brand span{display:block;font-size:9px;letter-spacing:4px;color:var(--muted);font-weight:600}
+    nav{display:flex;gap:22px;align-items:center;font-size:13px;color:#e6dfcf}nav a:hover{color:#ffffff}.menu{display:none;background:none;border:1px solid var(--line);color:#ffffff;padding:8px 12px;border-radius:8px}
+    .hero{padding:100px 0 88px;background:radial-gradient(ellipse at 80% 35%,rgba(229,57,53,.18),transparent 42%),linear-gradient(135deg,#090909,#111 55%,#090909);border-bottom:1px solid var(--line)}
+    .eyebrow{color:#ef5350;font-size:11px;letter-spacing:4px;text-transform:uppercase;font-weight:bold}.hero h1{font-size:clamp(42px,7vw,78px);line-height:1.02;letter-spacing:-2px;margin:18px 0}.hero h1 em{font-style:normal;color:#ffffff}.hero p{max-width:620px;color:var(--muted);font-size:17px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:5px;font-weight:bold;font-size:13px;letter-spacing:.5px}.primary{background:linear-gradient(135deg,#ef5350,#c62828);color:#ffffff}.outline{border:1px solid #e53935;color:#ffffff}
+    section{padding:78px 0}.section-head{margin-bottom:32px}.section-head h2{font-size:clamp(30px,4vw,44px);margin:8px 0;color:var(--text)}.section-head p{color:var(--muted);max-width:650px;margin:0}
+    .about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}.about-card{background:linear-gradient(145deg,#191919,#0e0e0e);border:1px solid var(--line);padding:30px;border-radius:12px}.about-card strong{color:#ffffff}
+    .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.stat{padding:22px;border:1px solid var(--line);border-radius:10px;background:#111}.stat b{display:block;color:#ffffff;font-size:25px}.stat span{font-size:12px;color:var(--muted)}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.service{padding:23px;border:1px solid var(--line);background:var(--panel);border-radius:10px;min-height:150px}.service .num{color:#ef5350;font-size:12px;letter-spacing:2px}.service h3{margin:10px 0 5px;font-size:17px}.service p{margin:0;color:var(--muted);font-size:13px}
+    .filters{display:flex;gap:9px;flex-wrap:wrap;margin:0 0 22px}.filter{background:#151515;border:1px solid var(--line);color:var(--muted);padding:8px 13px;border-radius:30px;font-size:12px;cursor:pointer}.filter.active,.filter:hover{background:var(--gold);color:#ffffff}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.work{min-height:220px;border:1px solid var(--line);border-radius:10px;overflow:hidden;position:relative;background:linear-gradient(135deg,#292929,#111 55%,#4b1717);display:flex;align-items:center;justify-content:center;text-align:center;padding:20px}.work:nth-child(2n){background:linear-gradient(135deg,#202020,#3b1717)}.work:nth-child(3n){background:linear-gradient(135deg,#3b1717,#101010)}.work h3{font-size:20px;color:#ffffff;margin:0}.work p{font-size:11px;color:#eeeeee;letter-spacing:2px;margin:7px 0 0}.work small{position:absolute;bottom:12px;left:12px;color:#bbbbbb;font-size:10px}
+    .note{font-size:12px;color:var(--muted);margin-top:14px}
+    .contact-box{display:grid;grid-template-columns:1fr 1fr;gap:20px;background:linear-gradient(135deg,#191919,#101010);border:1px solid var(--line);border-radius:14px;padding:30px}.contact-list{display:grid;gap:14px}.contact-item{padding:14px;background:#0c0c0c;border:1px solid var(--line);border-radius:8px}.contact-item span{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:2px}.contact-item b{color:#ffffff;overflow-wrap:anywhere}
+    footer{padding:25px 0;border-top:1px solid var(--line);color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    .whatsapp{position:fixed;right:18px;bottom:18px;z-index:30;background:#d32f2f;color:#ffffff;padding:13px 17px;border-radius:40px;font-weight:bold;box-shadow:0 8px 30px #0009;font-size:13px}
+    @media(max-width:760px){.menu{display:block}nav{display:none;position:absolute;top:76px;left:0;right:0;background:#0d0d0d;padding:18px 5%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}nav.open{display:flex}.hero{padding:75px 0}.about-grid,.contact-box{grid-template-columns:1fr}.services{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:repeat(2,1fr)}section{padding:60px 0}}
+    @media(max-width:460px){.services,.gallery{grid-template-columns:1fr}.work{min-height:190px}.hero h1{letter-spacing:-1px}.brand{font-size:15px}}
+  </style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#home">PC24<span>CREATIVE DESIGN STUDIO</span></a>
+  <button class="menu" id="menuBtn" aria-label="Open navigation">MENU ☰</button>
+  <nav id="navLinks"><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a></nav>
+</div></header>
+<main>
+  <section class="hero" id="home"><div class="wrap">
+    <div class="eyebrow">Design • Creativity • Quality</div>
+    <h1>WE DESIGN<br><em>YOUR VISION.</em></h1>
+    <p>Creative and professional graphic design solutions that help your business stand out. From memorable logos to eye-catching banners, sign boards and LED board designs.</p>
+    <div class="actions"><a class="btn primary" href="#portfolio">VIEW OUR WORK</a><a class="btn outline" href="https://wa.me/919514246814?text=Hello%20Pro%20SaravanaDigital%2C%20I%20need%20a%20design." target="_blank" rel="noopener">CHAT ON WHATSAPP</a></div>
+  </div></section>
+
+  <section id="about"><div class="wrap about-grid">
+    <div><div class="eyebrow">About us</div><div class="section-head"><h2>Ideas turned into<br><span style="color:#ffffff">impactful designs.</span></h2><p>PC24 is a graphic design portfolio focused on clean, creative and professional visual communication for businesses and special occasions.</p></div>
+      <div class="about-card">We create designs with attention to detail, strong visual identity and print-friendly presentation. <strong>Let's make your next idea stand out.</strong></div>
+    </div>
+    <div class="stats"><div class="stat"><b>01</b><span>Creative concepts</span></div><div class="stat"><b>02</b><span>Digital & print design</span></div><div class="stat"><b>03</b><span>Business branding</span></div><div class="stat"><b>04</b><span>Personalized service</span></div></div>
+  </div></section>
+
+  <section id="services" style="background:#0e0e0e"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">What we do</div><h2>Our Services</h2><p>Design solutions for brands, businesses, events and print promotions.</p></div>
+    <div class="services">
+      <article class="service"><div class="num">01 / BRANDING</div><h3>Logo Design</h3><p>Distinctive brand marks and identity concepts.</p></article>
+      <article class="service"><div class="num">02 / PROMOTION</div><h3>Banner Design</h3><p>Professional banners for business promotions.</p></article>
+      <article class="service"><div class="num">03 / ADVERTISING</div><h3>Poster Design</h3><p>Attention-grabbing posters for campaigns and events.</p></article>
+      <article class="service"><div class="num">04 / CELEBRATIONS</div><h3>Wedding Album Design</h3><p>Elegant album layouts to preserve special memories.</p></article>
+      <article class="service"><div class="num">05 / BUSINESS</div><h3>Business Advertisement</h3><p>Creative advertisements for products and services.</p></article>
+      <article class="service"><div class="num">06 / PRINT & DISPLAY</div><h3>Sign Board & LED Board</h3><p>Shop boards, outdoor signage and LED display artwork.</p></article>
+    </div>
+  </div></section>
+
+  <section id="portfolio"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">Selected creations</div><h2>Our Portfolio</h2><p>A showcase area for your best design projects. Replace these sample tiles with your actual work images before publishing.</p></div>
+    <div class="filters"><button class="filter active" data-filter="all">All Works</button><button class="filter" data-filter="branding">Logo</button><button class="filter" data-filter="print">Banner & Sign</button><button class="filter" data-filter="poster">Poster & Ads</button><button class="filter" data-filter="album">Wedding Album</button></div>
+    <div class="gallery">
+      <article class="work" data-category="branding"><div><h3>LOGO DESIGN</h3><p>BRAND IDENTITY</p></div><small>ADD YOUR PROJECT IMAGE</small></article>
+      <article class="work" data-category="print"><div><h3>BANNER DESIGN</h3><p>PRINT PROMOTION</p></div><small>ADD YOUR PROJECT IMAGE</small></article>
+      <article class="work" data-category="poster"><div><h3>POSTER DESIGN</h3><p>CREATIVE CAMPAIGN</p></div><small>ADD YOUR PROJECT IMAGE</small></article>
+      <article class="work" data-category="album"><div><h3>WEDDING ALBUM</h3><p>MEMORY DESIGN</p></div><small>ADD YOUR PROJECT IMAGE</small></article>
+      <article class="work" data-category="poster"><div><h3>BUSINESS AD</h3><p>BRAND PROMOTION</p></div><small>ADD YOUR PROJECT IMAGE</small></article>
+      <article class="work" data-category="print"><div><h3>LED & SIGN BOARD</h3><p>DISPLAY DESIGN</p></div><small>ADD YOUR PROJECT IMAGE</small></article>
+    </div>
+    <p class="note">Portfolio tip: use your own completed designs here. Do not present sample tiles as completed client projects.</p>
+  </div></section>
+
+  <section id="contact" style="background:#0e0e0e"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">Let's work together</div><h2>Start a Project</h2><p>Have a design requirement? Contact PC24 to discuss your idea.</p></div>
+    <div class="contact-box">
+      <div><h3 style="color:#ffffff;margin-top:0">Let's create something great.</h3><p style="color:var(--muted)">For logo, banner, poster, wedding album, business advertisement, sign board and LED board design enquiries, reach out directly.</p>
+        <a class="btn primary" href="https://wa.me/919514246814?text=Hello%20Pro%20SaravanaDigital%2C%20I%20would%20like%20to%20discuss%20a%20design%20project." target="_blank" rel="noopener">MESSAGE ON WHATSAPP</a>
+      </div>
+      <div class="contact-list">
+        <a class="contact-item" href="tel:+919514246814"><span>Phone</span><b>+91 95142 46814</b></a>
+        <a class="contact-item" href="mailto:muthuraj.pc@gmail.com"><span>Email</span><b>muthuraj.pc@gmail.com</b></a>
+        <div class="contact-item"><span>WhatsApp</span><b>+91 95142 46814</b></div>
+        <div class="contact-item"><span>Location</span><b>Thoothukudi, Tamil Nadu, India</b></div>
+      </div>
+    </div>
+  </div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> PC24. All rights reserved.</span><span>Designed with creativity & precision.</span></div></footer>
+<a class="whatsapp" href="https://wa.me/919514246814?text=Hello%20Pro%20SaravanaDigital" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp ↗</a>
+<script>
+  const menuBtn=document.getElementById('menuBtn'),nav=document.getElementById('navLinks');
+  menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+  document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{
+    document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
+    document.querySelectorAll('.work').forEach(card=>card.style.display=(btn.dataset.filter==='all'||card.dataset.category===btn.dataset.filter)?'flex':'none');
+  }));
+  document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body></html>
